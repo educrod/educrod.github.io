@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: rgb(21, 32, 43);
+  background: rgba(21,32,43,1.00);
   font: 18px/1.4 $helvetica;
   color: $white;
 }
@@ -69,11 +69,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: rgba(29,161,242,1.00);
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: rgba(29,161,242,1.00);
   }
 }
 
