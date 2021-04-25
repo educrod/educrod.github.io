@@ -13,6 +13,12 @@
 /* BASE RULES */
 /**************/
 
+@font-face {
+	font-family: "04b_30";
+	src: url("/assets/fonts/PressStart2P-vaV7.ttf");
+}
+
+
 html {
   font-size: 100%;
 }
@@ -25,7 +31,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 1000px;
   padding: 0 10px;
   width: 100%;
 }
@@ -281,11 +287,6 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
-}
-
-@font-face {
-	font-family: "04b_30";
-	src: url("/assets/fonts/04B_30__.TTF");
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
