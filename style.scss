@@ -14,7 +14,7 @@
 /**************/
 
 @font-face {
-	font-family: "04b_30";
+	font-family: "Pixel";
 	src: url("/assets/fonts/PressStart2P-vaV7.ttf");
 }
 
@@ -37,8 +37,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $white;
+  font-family: Pixel;
+  color: #b59800;
   font-weight: bold;
 
   line-height: 1.7;
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 20.4px;
   a {
     color: inherit;
   }
