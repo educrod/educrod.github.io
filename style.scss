@@ -283,6 +283,11 @@ footer {
   text-align: center;
 }
 
+@font-face {
+	font-family: "04b_30";
+	src: url("/assets/fonts/04B_30__.TTF");
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
