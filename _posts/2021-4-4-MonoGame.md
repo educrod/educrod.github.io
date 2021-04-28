@@ -168,7 +168,7 @@ Um último ajuste que talvez seja necessário deve ser feito no arquivo de <em>"
 
 A partir desse ponto basta que você pressione a tecla <em>"F5"</em> ou use o menu run\>start debugging no vscode para fazer o build e debug do seu projeto e ver uma bela tela azul surgir.  
 
-![_config.yml]({{ site.baseurl }}/images/blue_sreen.png)
+![_config.yml]({{ site.baseurl }}/images/blue_screen.png)
 
 Esse é o ponto de partida para começar a desenvolver jogos com MonoGame. Já fiz esse mesmo setup em Linux e também funciona perfeitamente com algumas poucas mudanças óbvias como por exemplo o gerenciador de pacotes que você irá usar.
 
