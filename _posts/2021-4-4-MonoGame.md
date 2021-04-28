@@ -2,7 +2,6 @@
 layout: post
 title: Sysadmins, programação e os video games.
 ---
-![_config.yml]({{ site.baseurl }}/images/1607046351526.png)
 
 Não é segredo pra ninguém que me conhece que sou defensor de que o profissional de infraestrutura moderno deve saber programar.
 
@@ -11,6 +10,8 @@ Conheci muitos sysadmins na minha carreira que já eram adeptos do shell script 
 O que pouca gente sabe é que meu interesse por programação nasceu fora do escritório e não foi para resolver nenhum problema ou automatizar nada. Foi para ter a experiência de como é produzir uma das coisas que mais amo na minha vida. Video games!
 
 Não tenho aqui a pretensão de ser um inspirador para que ninguém comece a programar pelo mesmo motivo e nem achar que meu hobby é melhor do que o de ninguém, mas apenas compartilhar aqui com meus amigos como foi a minha experiência e um pouquinho de conhecimento "inútil".
+
+Existem muitos frameworks para desenvolvimento de jogos por aí e todos eles envolvem conhecimentos de programação em maior ou menor grau. Um deles ficou muito famoso na geração do Xbox 360 pois permitiu a entrada de centenas de desenvolvedores independentes no cenário de desenvolvimento de jogos, estou falando do XNA da Microsoft (O documentário [Indie Game: The Movie](https://www.imdb.com/title/tt1942884/) mostra muito bem o sentimento que rolou naquela época).
 
 {% highlight bash %}
 brew install --cask dotnet-sdk
