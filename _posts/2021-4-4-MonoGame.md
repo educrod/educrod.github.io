@@ -101,7 +101,7 @@ launch.json:
 {% endhighlight %}
 
 tasks.json:
-{% include codeHeader.html %}
+
 {% highlight json%}
 {
     "version": "2.0.0",
