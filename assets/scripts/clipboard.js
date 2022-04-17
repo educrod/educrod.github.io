@@ -1,6 +1,6 @@
 
 document
-  .querySelector('.post-content')
+  .querySelector('.post')
   .querySelectorAll('pre.highlight')
   .forEach(function (pre) {
     var button = document.createElement('button');
