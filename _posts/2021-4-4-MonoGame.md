@@ -22,11 +22,11 @@ Quero compartilhar com vocês como criar um setup de desenvolvimento usando Mono
 Para facilitar a instalação dos das libs e sdk's necessários eu recomendo a instalação do homebrew para MacOs.
 
 Após a instalação do [homebrew](https://brew.sh/) você vai precisar instalar o dotnet core com o seguinte comando.
-```bash {data-file="_includes/codeHeader.html" data-copyable=true}
+~~~bash {data-file="_includes/codeHeader.html" data-copyable=true}
 
 brew install --cask dotnet-sdk
 
-```
+~~~
 
 Se seu MacOs >= Sierra o homebrew vai instalar a versão 5 do dornet core sdk no momento em que eu escrevo esse artigo e o MonoGame ainda não está totalmente preparado para essa versão. Para contornar esse problema você pode instalar esse excelente [tap](https://github.com/isen-ng/homebrew-dotnet-sdk-versions) que permite a instalação de múltiplas versões do dotnet core sdk usando o homebrew. Basta executar.
 
