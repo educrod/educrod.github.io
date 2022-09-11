@@ -23,7 +23,7 @@ Para facilitar a instalação dos das libs e sdk's necessários eu recomendo a i
 
 Após a instalação do [homebrew](https://brew.sh/) você vai precisar instalar o dotnet core com o seguinte comando.
 
-```bash {data-file="_includes/codeHeader.html" data-copyable=true}
+```bash
 brew install --cask dotnet-sdk
 ```
 
