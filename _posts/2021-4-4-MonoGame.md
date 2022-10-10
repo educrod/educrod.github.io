@@ -102,7 +102,7 @@ launch.json:
 
 tasks.json:
 
-{% highlight json%}
+```json
 {
     "version": "2.0.0",
     "tasks": [
@@ -145,22 +145,22 @@ tasks.json:
         }
     ]
 }
-{% endhighlight %}
+```
 
 Mais um arquivo deve ser criado mas desta vez na raiz do projeto <em>"global.json"</em>.
 
-{% highlight json%}
+```json
 {
     "sdk": {
       "version": "3.1.404",
       "rollForward": "disable"
     }
 }
-{% endhighlight %}
+```
 
 Um último ajuste que talvez seja necessário deve ser feito no arquivo de <em>"settings"</em> do vscode e aqui eu digo talvez pois não me lembro ao certo quais linhas eu adicionei ao arquivo. De qualquer forma confira se as seguintes linhas estão presentes no arquivo <em>~/Library/Application Support/Code/User/settings.json</em>
 
-{% highlight json%}
+```json
 "omnisharp.path": "latest",
 "omnisharp.useGlobalMono": "never",
 "csharp.referencesCodeLens.enabled": false,
