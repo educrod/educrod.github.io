@@ -164,7 +164,7 @@ Um último ajuste que talvez seja necessário deve ser feito no arquivo de <em>"
 "omnisharp.path": "latest",
 "omnisharp.useGlobalMono": "never",
 "csharp.referencesCodeLens.enabled": false,
-{% endhighlight %}
+```
 
 A partir desse ponto basta que você pressione a tecla <em>"F5"</em> ou use o menu run\>start debugging no vscode para fazer o build e debug do seu projeto e ver uma bela tela azul surgir.  
 
