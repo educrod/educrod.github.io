@@ -72,7 +72,7 @@ Antes de tentar <em>"debugar"</em> o projeto é necessário criar alguns arquivo
 
 launch.json:
 
-{% highlight json%}
+```json
 {
   // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -98,7 +98,7 @@ launch.json:
         }
     ]
 }
-{% endhighlight %}
+```
 
 tasks.json:
 
