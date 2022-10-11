@@ -15,13 +15,7 @@ pre.highlight {
     font-size: 10px;
     cursor: pointer;
     opacity: 0;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background-color: #15202b;
-      opacity: 0;
-    }
+    width: 100px;
   }
 
   &:active .copy,
