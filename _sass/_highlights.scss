@@ -5,24 +5,29 @@ pre.highlight {
 
   // copy code to clipboard
   .copy {
-    color: $white;
+    color: white;
+    border: none;
     position: absolute;
-    right: 1.2rem;
-    top: 1.2rem;
+    padding: 10px 32px;
+    right: 1.0rem;
+    top: 0.2rem;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
     opacity: 0;
 
     &:active,
     &:focus,
     &:hover {
-      background: rgba(0, 0, 0, 0.7);
-      opacity: 1;
+      background-color: #15202b;
+      opacity: 0;
     }
   }
 
   &:active .copy,
   &:focus .copy,
   &:hover .copy {
-    background: rgba(0, 0, 0, 0.7);
+    background-color: #15202b;
     opacity: 1;
   }
 }
