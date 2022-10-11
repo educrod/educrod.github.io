@@ -64,7 +64,7 @@ Agora estamos quase prontos e o que precisamos fazer para criar um novo projeto 
 
 ```bash
 dotnet new mgdesktopgl
-{% endhighlight %}
+```
 
 Isso vai criar alguns arquivos baseados no template que acabamos de instalar e podemos abrir o projeto no vscode usando o comando <em>"code ."</em> ou abrindo o vscode e usando o menu "file" normalmente.
 
