@@ -18,9 +18,7 @@ pre.highlight {
     width: 100px;
   }
 
-  &:active .copy {
-    color: rgb(111, 227, 148);
-  }
+  &:active .copy,
   &:focus .copy,
   &:hover .copy {
     background-color: #15202b;

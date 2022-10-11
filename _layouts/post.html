@@ -29,6 +29,7 @@ layout: default
         var code = pre.querySelector('code').innerText.trim();
         navigator.clipboard.writeText(code);
         button.innerText = 'Copied';
+        button.style.color = 'green';
         setTimeout(function () {
           button.innerText = copyText;
         }, 4000);
