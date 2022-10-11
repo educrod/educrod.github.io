@@ -9,13 +9,14 @@ pre.highlight {
     border: none;
     position: absolute;
     padding: 10px 32px;
-    right: 1.0rem;
-    top: 0.2rem;
+    right: 0.0rem;
+    top: 0.0rem;
     display: inline-block;
     font-size: 10px;
     cursor: pointer;
     opacity: 0;
-    width: 100px;
+    width: 120px;
+    font-family: Pixel;
   }
 
   &:active .copy,
