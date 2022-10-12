@@ -16,6 +16,7 @@ pre.highlight {
     cursor: pointer;
     opacity: 0;
     width: 100px;
+    font-family: inherit;
   }
 
   &:active .copy,

@@ -28,8 +28,10 @@ layout: default
       button.addEventListener('click', function () {
         var code = pre.querySelector('code').innerText.trim();
         navigator.clipboard.writeText(code);
-        button.innerText = 'Copied';
+        button.style.color = '#1da1f2';
+        button.innerText = 'Done';
         setTimeout(function () {
+          button.style.color = '';
           button.innerText = copyText;
         }, 4000);
       });
