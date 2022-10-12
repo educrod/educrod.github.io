@@ -5,18 +5,23 @@ pre.highlight {
 
   // copy code to clipboard
   .copy {
-    color: white;
+    color: #b59800;
     border: none;
     position: absolute;
     padding: 10px 32px;
-    right: 1.0rem;
-    top: 0.2rem;
+    right: 0.0rem;
+    top: 0.0rem;
     display: inline-block;
     font-size: 10px;
     cursor: pointer;
     opacity: 0;
+<<<<<<< HEAD
     width: 100px;
     font-family: inherit;
+=======
+    width: 120px;
+    font-family: Pixel;
+>>>>>>> 35350ef14de1a969e30eb39b8c750e2ad4b894ca
   }
 
   &:active .copy,

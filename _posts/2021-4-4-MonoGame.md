@@ -36,35 +36,35 @@ brew cask install dotnet-sdk3-1-400
 
 O MonoGame também requer o Mono framework o qual você também pode instalar usando o homebrew.
 
-{% highlight bash %}
+```bash
 brew install mono
-{% endhighlight %}
+```
 
 Aqui eu recomendo também a instalação da lib freetype que irá auxiliar no processo de renderização de fonts nos seus futuros jogos.
 
-{% highlight bash %}
+```bash
 brew install freetype
-{% endhighlight %}
+```
 
 Também vamos precisar do [vscode](https://code.visualstudio.com/) e da extensão [ms-dotnettools.csharp](https://code.visualstudio.com/docs/introvideos/extend) para edição e debug do nosso código.
 
 Agora precisamos clonar o projeto do MonoGame do repositório oficial no [github](https://github.com/MonoGame/MonoGame).
 
-{% highlight bash %}
+```bash
 git clone https://github.com/MonoGame/MonoGame.git
-{% endhighlight %}
+```
 
 Dentre os conteúdos do projeto existem alguns templates que devemos instalar acessando o diretório do projeto recém clonado e executando o comando abaixo.
 
-{% highlight bash %}
+```bash
 dotnet new --install Templates/MonoGame.Templates.CSharp/content
-{% endhighlight %}
+```
 
 Agora estamos quase prontos e o que precisamos fazer para criar um novo projeto de jogo é criar um novo diretório com o nome que você desejar e a partir dele executar o comando.
 
-{% highlight bash %}
+```bash
 dotnet new mgdesktopgl
-{% endhighlight %}
+```
 
 Isso vai criar alguns arquivos baseados no template que acabamos de instalar e podemos abrir o projeto no vscode usando o comando <em>"code ."</em> ou abrindo o vscode e usando o menu "file" normalmente.
 
