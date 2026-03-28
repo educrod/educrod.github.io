@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if title %}{{ title }} – {% endif %}{{ metadata.name }} – {{ metadata.description }}</title>
+
+    {% include "meta.njk" %}
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ metadata.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ metadata.name }} - {{ metadata.description }}" href="{{ metadata.baseurl }}/feed.xml" />
+    <a rel="me" href="https://mastodon.social/@edudu" style="display:none;">Mastodon</a>
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ metadata.baseurl }}/" class="site-avatar"><img src="{{ metadata.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ metadata.baseurl }}/">{{ metadata.name }}</a></h1>
+            <p class="site-description">{{ metadata.description }}</p>
+          </div>
+
+          <nav>
+            <a href="{{ metadata.baseurl }}/">Blog</a>
+            <a href="{{ metadata.baseurl }}/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content | safe }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include "svg-icons.njk" %}
+        </footer>
+      </div>
+    </div>
+
+    {% include "analytics.njk" %}
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "dudu - The hobbyist developer",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "eleventy-sass": "^2.2.1",
+    "markdown-it": "^14.0.0",
+    "highlight.js": "^11.9.0"
+  }
+}

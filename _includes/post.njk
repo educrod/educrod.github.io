@@ -1,0 +1,40 @@
+---
+layout: base.njk
+---
+
+<article class="post">
+  <h1>{{ title }}</h1>
+
+  <div class="entry">
+    {{ content | safe }}
+  </div>
+
+  <div class="date">
+    Written on {{ page.date | dateFormat }}
+  </div>
+  {% include "disqus.njk" %}
+</article>
+<script>
+  document
+    .querySelector('.post')
+    .querySelectorAll('pre.highlight')
+    .forEach(function (pre) {
+      var button = document.createElement('button');
+      var copyText = 'Copy';
+      button.className = 'copy';
+      button.type = 'button';
+      button.ariaLabel = 'Copy code to clipboard';
+      button.innerText = copyText;
+      button.addEventListener('click', function () {
+        var code = pre.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.style.color = '#1da1f2';
+        button.innerText = 'Done';
+        setTimeout(function () {
+          button.style.color = '';
+          button.innerText = copyText;
+        }, 4000);
+      });
+      pre.appendChild(button);
+    });
+</script>

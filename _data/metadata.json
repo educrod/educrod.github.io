@@ -1,0 +1,24 @@
+{
+  "name": "dudu",
+  "description": "The hobbyist developer",
+  "avatar": "https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png",
+  "url": "http://dudu.eng.br",
+  "baseurl": "",
+  "google_analytics": "UA-196972074-1",
+  "disqus": "",
+  "footer-links": {
+    "dribbble": "",
+    "email": "",
+    "facebook": "",
+    "flickr": "",
+    "github": "educrod",
+    "instagram": "edu.crod",
+    "linkedin": "eduardo-rodrigues-b9565815",
+    "mastodon": "edudu",
+    "pinterest": "",
+    "rss": "",
+    "stackoverflow": "",
+    "youtube": "",
+    "googleplus": ""
+  }
+}

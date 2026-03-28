@@ -1,0 +1,77 @@
+pre.highlight {
+  position: relative;
+  margin: 0;
+  border: 0;
+
+  // copy code to clipboard
+  .copy {
+    color: #b59800;
+    border: none;
+    position: absolute;
+    padding: 10px 32px;
+    right: 0.0rem;
+    top: 0.0rem;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0;
+    width: 100px;
+    font-family: inherit;
+  }
+
+  &:active .copy,
+  &:focus .copy,
+  &:hover .copy {
+    background-color: #15202b;
+    opacity: 1;
+  }
+}
+
+.highlight {
+  background-color: #1b2a38;
+  border: 1px solid #2d6472;
+  padding: 7px 7px 7px 15px;
+  margin: 10px 0 10px 0;
+  overflow: auto;
+}
+
+code {
+  font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
+}
+
+// highlight.js token classes — Solarized Dark theme
+.hljs-comment,
+.hljs-quote          { color: #586E75 } /* Comment */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition       { color: #859900 } /* Keyword */
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp         { color: #2AA198 } /* String / Number */
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class { color: #268BD2 } /* Name / Title */
+.hljs-attribute,
+.hljs-attr           { color: #93A1A1 } /* Attribute */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type           { color: #268BD2 } /* Variable / Type */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link           { color: #CB4B16 } /* Other */
+.hljs-built_in,
+.hljs-builtin-name   { color: #B58900 } /* Builtin */
+.hljs-deletion       { color: #DC322F } /* Error / Deletion */
+.hljs-emphasis       { font-style: italic }
+.hljs-strong         { font-weight: bold }
