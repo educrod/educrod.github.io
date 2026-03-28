@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="{{ metadata.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ metadata.name }} - {{ metadata.description }}" href="{{ metadata.baseurl }}/feed.xml" />
@@ -23,18 +23,18 @@
   <body>
     <div class="wrapper-masthead">
       <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ metadata.baseurl }}/" class="site-avatar"><img src="{{ metadata.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ metadata.baseurl }}/">{{ metadata.name }}</a></h1>
-            <p class="site-description">{{ metadata.description }}</p>
+        <header class="masthead">
+          <div class="masthead__inner">
+            <div class="masthead__logo">
+              <a href="{{ metadata.baseurl }}/" class="site-avatar"><img src="{{ metadata.avatar }}" /></a>
+              <h1 class="site-name"><a href="{{ metadata.baseurl }}/">{{ metadata.name }}</a></h1>
+            </div>
+            <nav>
+              <a href="{{ metadata.baseurl }}/">Blog</a>
+              <a href="{{ metadata.baseurl }}/about">About</a>
+            </nav>
           </div>
-
-          <nav>
-            <a href="{{ metadata.baseurl }}/">Blog</a>
-            <a href="{{ metadata.baseurl }}/about">About</a>
-          </nav>
+          <p class="site-description">{{ metadata.description }}</p>
         </header>
       </div>
     </div>

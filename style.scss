@@ -16,7 +16,7 @@ html {
 
 body {
   background: rgba(21,32,43,1.00);
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $firaCode;
   color: $white;
 }
 
@@ -117,6 +117,13 @@ img {
   color: $gray;
 }
 
+.post-meta {
+  color: $gray;
+  font-size: 14px;
+  margin: -10px 0 20px;
+  letter-spacing: 0.03em;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -152,84 +159,105 @@ img {
 }
 
 .masthead {
+  display: flex;
+  flex-direction: column;
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid rgba($lightGray, 0.2);
+}
+
+.masthead__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @include mobile {
-    text-align: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.masthead__logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-right: 20px;
+
+  @include mobile {
+    margin-right: 0;
   }
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  flex: 0 0 auto;
 
   img {
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
     display: block;
-    margin: 0 auto;
   }
 }
 
 .site-name {
   margin: 0;
-  color: $white;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  line-height: 1;
+  flex: 0 0 auto;
+
+  a {
+    display: flex;
+    align-items: center;
+    background-color: #b59800;
+    color: #15202b;
+    height: 40px;
+    padding: 0 10px;
+    font-family: $helveticaNeue;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    &:hover, &:active {
+      background-color: #9c8200;
+      color: #15202b;
+    }
+  }
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: 10px 0 0 65px;
   color: $gray;
-  font-size: 16px;
+  font-size: 14px;
 
   @include mobile {
-    margin: 3px 0;
+    margin: 6px 0 0 0;
+    text-align: center;
   }
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  flex: 0 0 auto;
+  font-family: $firaCode;
+  font-size: 15px;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   a {
     margin-left: 20px;
-    color: $white;
-    text-align: right;
-    font-weight: 300;
+    color: $blue;
+    font-weight: 400;
     letter-spacing: 1px;
+
+    &:hover {
+      color: #b59800;
+    }
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
     }
   }
 }
@@ -264,15 +292,24 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: $blue;
+    border: 1px solid rgba($blue, 0.5);
+    padding: 4px 12px;
+
+    &:hover {
+      border-color: #b59800;
+      color: #b59800;
+    }
   }
 }
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid rgba(#b59800, 0.25);
+  border-bottom: 1px solid rgba(#b59800, 0.25);
+  background-color: #0a1520;
 }
 
 footer {

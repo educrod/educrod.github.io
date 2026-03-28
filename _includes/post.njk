@@ -10,31 +10,43 @@ layout: base.njk
   </div>
 
   <div class="date">
-    Written on {{ page.date | dateFormat }}
+    {{ page.date | dateFormat }}
   </div>
   {% include "disqus.njk" %}
 </article>
 <script>
+  const copyText = 'Copy';
+
   document
     .querySelector('.post')
     .querySelectorAll('pre.highlight')
     .forEach(function (pre) {
-      var button = document.createElement('button');
-      var copyText = 'Copy';
+      const code = pre.querySelector('code');
+      if (!code) return;
+
+      const button = document.createElement('button');
       button.className = 'copy';
       button.type = 'button';
-      button.ariaLabel = 'Copy code to clipboard';
+      button.setAttribute('aria-label', 'Copy code to clipboard');
       button.innerText = copyText;
+
       button.addEventListener('click', function () {
-        var code = pre.querySelector('code').innerText.trim();
-        navigator.clipboard.writeText(code);
-        button.style.color = '#1da1f2';
-        button.innerText = 'Done';
-        setTimeout(function () {
-          button.style.color = '';
-          button.innerText = copyText;
-        }, 4000);
+        button.classList.add('copy--clicked');
+        navigator.clipboard.writeText(code.innerText.trim()).then(function () {
+          button.innerText = 'Done';
+          setTimeout(function () {
+            button.innerText = copyText;
+            button.classList.remove('copy--clicked');
+          }, 4000);
+        }).catch(function () {
+          button.innerText = 'Error';
+          setTimeout(function () {
+            button.innerText = copyText;
+            button.classList.remove('copy--clicked');
+          }, 4000);
+        });
       });
+
       pre.appendChild(button);
     });
 </script>

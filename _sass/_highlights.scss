@@ -5,25 +5,31 @@ pre.highlight {
 
   // copy code to clipboard
   .copy {
-    color: #b59800;
-    border: none;
+    color: #1da1f2;
+    border: 1px solid rgba(#1da1f2, 0.5);
     position: absolute;
-    padding: 10px 32px;
-    right: 0.0rem;
-    top: 0.0rem;
+    padding: 4px 12px;
+    right: 0.5rem;
+    top: 0.5rem;
     display: inline-block;
     font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     cursor: pointer;
     opacity: 0;
-    width: 100px;
     font-family: inherit;
+    background-color: #1b2a38;
   }
 
   &:active .copy,
   &:focus .copy,
   &:hover .copy {
-    background-color: #15202b;
     opacity: 1;
+  }
+
+  .copy.copy--clicked {
+    color: #b59800;
+    border-color: #b59800;
   }
 }
 
