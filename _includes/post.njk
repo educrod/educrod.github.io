@@ -5,6 +5,18 @@ layout: base.njk
 <article class="post">
   <h1>{{ title }}</h1>
 
+  {% if translationKey %}
+    {% set translations = collections.postsByTranslationKey[translationKey] %}
+    <div class="lang-switcher">
+      {% if lang == 'pt' and translations.en %}
+        <a href="{{ translations.en.url }}">🇺🇸 Read in English</a>
+      {% endif %}
+      {% if lang == 'en' and translations.pt %}
+        <a href="{{ translations.pt.url }}">🇧🇷 Ler em Português</a>
+      {% endif %}
+    </div>
+  {% endif %}
+
   <div class="entry">
     {{ content | safe }}
   </div>
