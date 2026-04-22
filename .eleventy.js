@@ -21,19 +21,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("CNAME");
 
-  // Group posts by translationKey for language switcher
-  eleventyConfig.addCollection("postsByTranslationKey", function (collectionApi) {
-    const map = {};
-    collectionApi.getFilteredByTag("posts").forEach((post) => {
-      const key = post.data.translationKey;
-      if (key) {
-        if (!map[key]) map[key] = {};
-        map[key][post.data.lang] = post;
-      }
-    });
-    return map;
-  });
-
   // Date filter: "April 4, 2021"
   eleventyConfig.addFilter("dateFormat", function (date) {
     if (!date) return "";

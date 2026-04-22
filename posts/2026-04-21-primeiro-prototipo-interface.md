@@ -1,8 +1,7 @@
 ---
 title: Primeiro protótipo de interface do jogo.
 date: 2026-04-21
-permalink: /pt/primeiro-prototipo-interface/
-translationKey: first-prototype-interface
+permalink: /primeiro-prototipo-interface/
 ---
 
 Primeira tentativa de criar um protótipo de interface para o meu jogo ainda sem nome.

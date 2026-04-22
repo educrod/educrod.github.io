@@ -4,21 +4,19 @@ layout: base.njk
 
 <div class="posts">
   {% for post in collections.posts | reverse %}
-    {% if post.data.lang == 'pt' %}
-      <article class="post">
+    <article class="post">
 
-        <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+      <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
 
-        <div class="post-meta">
-          {{ post.date | dateFormat }}
-        </div>
+      <div class="post-meta">
+        {{ post.date | dateFormat }}
+      </div>
 
-        <div class="entry">
-          {{ post.templateContent | excerpt | safe }}
-        </div>
+      <div class="entry">
+        {{ post.templateContent | excerpt | safe }}
+      </div>
 
-        <a href="{{ post.url }}" class="read-more">Ler mais</a>
-      </article>
-    {% endif %}
+      <a href="{{ post.url }}" class="read-more">Ler mais</a>
+    </article>
   {% endfor %}
 </div>
