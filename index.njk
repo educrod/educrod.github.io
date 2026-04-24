@@ -2,9 +2,6 @@
 layout: base.njk
 ---
 
-<div class="post-layout">
-  {% include "sidebar.njk" %}
-
 <div class="posts">
   {% for post in collections.posts | reverse %}
     <article class="post">
@@ -22,5 +19,4 @@ layout: base.njk
       <a href="{{ post.url }}" class="read-more">Ler mais</a>
     </article>
   {% endfor %}
-</div>
 </div>
