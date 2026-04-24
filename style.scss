@@ -318,6 +318,11 @@ footer {
 }
 
 
+// Widen the main container when a sidebar is present
+#main:has(.post-layout) {
+  max-width: 1260px;
+}
+
 // Post layout with sidebar
 .post-layout {
   display: grid;
