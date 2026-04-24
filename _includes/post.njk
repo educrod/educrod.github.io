@@ -2,18 +2,22 @@
 layout: base.njk
 ---
 
-<article class="post">
-  <h1>{{ title }}</h1>
+<div class="post-layout">
+  {% include "sidebar.njk" %}
 
-  <div class="entry">
-    {{ content | safe }}
-  </div>
+  <article class="post">
+    <h1>{{ title }}</h1>
 
-  <div class="date">
-    {{ page.date | dateFormat }}
-  </div>
-  {% include "disqus.njk" %}
-</article>
+    <div class="entry">
+      {{ content | safe }}
+    </div>
+
+    <div class="date">
+      {{ page.date | dateFormat }}
+    </div>
+    {% include "disqus.njk" %}
+  </article>
+</div>
 <script>
   const copyText = 'Copy';
 
