@@ -218,10 +218,35 @@ img {
     font-size: 18px;
     letter-spacing: 1px;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background: rgba(255, 255, 255, 0.25);
+      transition: height 0.2s;
+      z-index: -1;
+    }
 
     &:hover, &:active {
       background-color: #9c8200;
       color: #15202b;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover:after {
+      height: 100%;
+    }
+
+    &:active {
+      transform: translateY(0);
     }
   }
 }
