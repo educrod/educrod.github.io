@@ -16,8 +16,8 @@
 <a href="https://www.flickr.com/photos/{{ links.flickr }}"><i class="svg-icon flickr"></i></a>
 {% endif %}
 
-{% if links.github %}
-<a href="https://github.com/{{ links.github }}"><i class="svg-icon github"></i></a>
+{% if links.forgejo %}
+<a href="{{ links.forgejo }}"><i class="svg-icon forgejo"></i></a>
 {% endif %}
 
 {% if links.instagram %}
@@ -26,6 +26,10 @@
 
 {% if links.linkedin %}
 <a href="https://www.linkedin.com/in/{{ links.linkedin }}"><i class="svg-icon linkedin"></i></a>
+{% endif %}
+
+{% if links.mastodon %}
+<a href="{{ links.mastodon }}" rel="me"><i class="svg-icon mastodon"></i></a>
 {% endif %}
 
 {% if links.pinterest %}
