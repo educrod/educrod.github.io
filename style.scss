@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Press Start 2P', cursive;
   color: #b59800;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   line-height: 1.7;
   margin: 1em 0 15px;
