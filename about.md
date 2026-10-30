@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-title: About
+title: Sobre mim
 permalink: /about/
 ---
 
@@ -12,6 +12,6 @@ Divido a casa com meus gatos, que são parte fundamental da minha rotina. Tenho 
 
 Aqui neste blog, escrevo sobre o que der na telha.
 
-### Contact me
+### Contato
 
 [edu.crod@gmail.com](mailto:edu.crod@gmail.com)
